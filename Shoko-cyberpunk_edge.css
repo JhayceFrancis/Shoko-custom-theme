@@ -1,22 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap'); 
+/* 1. Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
-.v-application { 
-    font-family: 'Share Tech Mono', monospace !important; 
-} 
-
-.v-card { 
-    border-top: 4px solid #42f5e3 !important; 
-    border-radius: 4px !important; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important; 
-    background-color: #0b1011 !important; 
-    margin-bottom: 1.5rem !important; 
-} 
-
-.v-card__title, .text-h6, .text-subtitle-1 { 
-    color: #42f5e3 !important; 
-    text-transform: uppercase !important; 
-    letter-spacing: 1.5px !important; 
-    text-shadow: 0 0 5px rgba(66, 245, 227, 0.3) !important; 
-    font-weight: bold !important; 
+/* 2. Vuetify Color Variables Override */
+:root {
+    --v-background-base: #050505 !important;
+    --v-surface-base: #0b1011 !important;
+    --v-primary-base: #42f5e3 !important;
+    --v-secondary-base: #7e22ce !important;
 }
 
+/* 3. Global App Overrides (Font and Base Background) */
+.v-application {
+    font-family: 'Share Tech Mono', monospace !important;
+    background-color: var(--v-background-base) !important;
+}
+
+/* 4. Shoko Card to Panel Translation */
+.v-card {
+    background-color: var(--v-surface-base) !important;
+    border-top: 4px solid var(--v-primary-base) !important;
+    border-radius: 4px !important; /* Slight panel curve */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* 5. Typography Neon Glow Effects */
+.v-card__title, .text-h6, .text-subtitle-1 {
+    color: var(--v-primary-base) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    text-shadow: 0 0 5px rgba(66, 245, 227, 0.3) !important;
+    font-weight: bold !important;
+}
+
+/* 6. Sharp Industrial Buttons with Smooth Hover */
+.v-btn {
+    border-radius: 0 !important;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s ease-in-out !important;
+}
+
+.v-btn:hover {
+    background-color: var(--v-primary-base) !important;
+    color: var(--v-background-base) !important;
+    text-transform: uppercase !important; 
+    text-shadow: 0 0 5px rgba(66, 245, 227, 0.3) !important;
+}
+
+/* 7. Custom Cyberpunk Scrollbar */
+::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--v-background-base) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--v-primary-base) !important;
+    border-radius: 0 !important; /* Keeps the sharp, industrial feel */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--v-secondary-base) !important; /* Turns purple on hover! */
+}
+
+/* 8. Text Selection Highlight */
+::selection {
+    background-color: var(--v-primary-base) !important;
+    color: var(--v-background-base) !important;
+}
+
+/* 9. Active Text Input Glow */
+input:focus, textarea:focus, .v-text-field--is-focused {
+    outline: none !important;
+    border-bottom: 2px solid var(--v-primary-base) !important;
+    box-shadow: 0 4px 10px rgba(66, 245, 227, 0.2) !important;
+    color: var(--v-primary-base) !important;
+}
+
+/* 10. Disabled Button State */
+.v-btn:disabled, .v-btn.v-btn--disabled {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+}
