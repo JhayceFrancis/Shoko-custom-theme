@@ -1,9 +1,10 @@
 {
   "name": "Cyberpunk Edge",
   "description": "A high-contrast, neon-infused dark theme for ShokoServer Dashboard.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "JC",
-  "theme": {
+  "type": "dark",
+  "colors": {
     "primary": "#42f5e3",
     "secondary": "#7e22ce",
     "accent": "#ff8800",
@@ -13,6 +14,5 @@
     "warning": "#ff8800",
     "background": "#050505",
     "surface": "#0b1011"
-  },
-  "css": "@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap'); .v-application { font-family: 'Share Tech Mono', monospace !important; } .v-card { border-top: 4px solid #42f5e3 !important; border-radius: 4px !important; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important; background-color: #0b1011 !important; margin-bottom: 1.5rem !important; } .v-card__title, .text-h6, .text-subtitle-1 { color: #42f5e3 !important; text-transform: uppercase !important; letter-spacing: 1.5px !important; text-shadow: 0 0 5px rgba(66, 245, 227, 0.3) !important; font-weight: bold !important; }"
+  }
 }
