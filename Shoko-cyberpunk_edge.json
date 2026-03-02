@@ -1,18 +1,9 @@
 {
   "name": "Cyberpunk Edge",
-  "description": "A high-contrast, neon-infused dark theme for ShokoServer Dashboard.",
+  "description": "A high-contrast, neon-infused, industrial cyberpunk dark theme for ShokoServer Dashboard.",
   "version": "1.1.1",
-  "author": "JC",
-  "type": "dark",
-  "colors": {
-    "primary": "#42f5e3",
-    "secondary": "#7e22ce",
-    "accent": "#ff8800",
-    "error": "#ff003c",
-    "info": "#42f5e3",
-    "success": "#00ff9d",
-    "warning": "#ff8800",
-    "background": "#050505",
-    "surface": "#0b1011"
-  }
+  "author": "JhayceFrancis",
+  "tags": ["Dark Theme", "Cyberpunk", "Neon", "Teal"],
+  "cssUrl": "https://raw.githubusercontent.com/JhayceFrancis/Shoko-custom-theme/main/Shoko-cyberpunk_edge.css",
+  "updateUrl": "https://raw.githubusercontent.com/JhayceFrancis/Shoko-custom-theme/main/Shoko-cyberpunk_edge.json"
 }
